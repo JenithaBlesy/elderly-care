@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elderly Care Management System</title>  
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a482d925b9.js" crossorigin="anonymous"></script>
+    <style>
+        /* Add styles to hide sections initially */
+        .section {
+            display: none; /* Hide all sections by default */
+        }      
+    </style>
+</head>
+<body>
+<div id="header" class="section">
+    <div class="container">
+        <nav>
+            <img src="image1.png" class="logo" alt="Elderly Care Logo">
+            <ul>
+                <li><a href="#" onclick="showSection('header')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#" onclick="showSection('services')">Services</a></li>
+                <li><a href="#" onclick="showSection('features')">Features</a></li>
+                <li><a href="#" onclick="showSection('shop')">Shop</a></li>
+                <li><a href="#" onclick="showSection('blog')">Blog</a></li>
+                <li><a href="#" onclick="showSection('testimonials')">Testimonials</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('faqs')">FAQs</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Comprehensive Elderly Care</p>
+            <h1>Welcome to <span>Elderly Care Management</span> <br> Empowering Senior Well-being</h1>
+        </div>
+    </div>
+</div>
+<!--About-->
+<div id="about" class="section">
+    <div class="container">
+        <nav>
+            <img src="image1.png" class="logo" alt="Elderly Care Logo">
+            <ul>
+                <li><a href="#" onclick="showSection('header')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#" onclick="showSection('services')">Services</a></li>
+                <li><a href="#" onclick="showSection('features')">Features</a></li>
+                <li><a href="#" onclick="showSection('shop')">Shop</a></li>
+                <li><a href="#" onclick="showSection('blog')">Blog</a></li>
+                <li><a href="#" onclick="showSection('testimonials')">Testimonials</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('faqs')">FAQs</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="https://www.fouroakshealthcare.co.uk/wp-content/uploads/2022/07/iStock-1380983332-1170x740.jpg" alt="About Us Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Us</h1>
+                <p>We are a dedicated team of professionals committed to providing personalized care and support for the elderly. Our focus is on ensuring their safety, well-being, and comfort. We tailor our services to promote independence while offering the necessary assistance to make daily life easier.</p>
+                <h2>Our Philosophy</h2>
+                <p>We believe in a holistic approach to elderly care, considering not just physical health but also emotional and social well-being. Our goal is to create a nurturing environment that respects the dignity of each individual.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'Mission')">Our Mission</p>
+                    <p class="tab-links" onclick="opentab(event, 'Vision')">Our Vision</p>
+                </div>
+                <div class="tab-contents active-tab" id="Mission">
+                    <ul>
+                        <li><span>Mission:</span> To provide compassionate care that enhances the quality of life for seniors, promoting their dignity and independence.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Vision">
+                    <ul>
+                        <li><span>Vision:</span> To be a trusted partner in elderly care, fostering a community where seniors feel valued and cared for.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Services-->
+<div id="services" class="section">
+    <div class="container">
+        <nav>
+            <img src="image1.png" class="logo" alt="Elderly Care Logo">
+            <ul>
+                <li><a href="#" onclick="showSection('header')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#" onclick="showSection('services')">Services</a></li>
+                <li><a href="#" onclick="showSection('features')">Features</a></li>
+                <li><a href="#" onclick="showSection('shop')">Shop</a></li>
+                <li><a href="#" onclick="showSection('blog')">Blog</a></li>
+                <li><a href="#" onclick="showSection('testimonials')">Testimonials</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('faqs')">FAQs</a></li>
+            </ul>
+        </nav>
+        <h1 class="sub-title">Our Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                <h2>Personal Care</h2>
+                <p>We provide assistance with daily activities, ensuring dignity and respect while helping with bathing, grooming, and mobility.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-briefcase-medical"></i>
+                <h2>Medical Assistance</h2>
+                <p>Our trained team assists with medication management, doctor visits, and monitoring overall health conditions, ensuring peace of mind for families.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-house-user"></i>
+                <h2>In-Home Support</h2>
+                <p>Our in-home services allow seniors to live comfortably and independently in their own homes with the right support tailored to their needs.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-comments"></i>
+                <h2>Companionship</h2>
+                <p>We offer companionship services to help alleviate feelings of loneliness and isolation, providing seniors with meaningful social interactions.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-nurse"></i>
+                <h2>Rehabilitation Support</h2>
+                <p>Our team provides support for physical rehabilitation, ensuring seniors recover safely and effectively after surgery or illness.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-carrot"></i>
+                <h2>Nutrition Counseling</h2>
+                <p>We provide personalized nutrition counseling to help seniors maintain a balanced diet and manage health conditions through proper nutrition.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Features Section -->
+<div id="features" class="section">
+    <div class="container">
+        <nav>
+            <img src="image1.png" class="logo" alt="Elderly Care Logo">
+            <ul>
+                <li><a href="#" onclick="showSection('header')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#" onclick="showSection('services')">Services</a></li>
+                <li><a href="#" onclick="showSection('features')">Features</a></li>
+                <li><a href="#" onclick="showSection('shop')">Shop</a></li>
+                <li><a href="#" onclick="showSection('blog')">Blog</a></li>
+                <li><a href="#" onclick="showSection('testimonials')">Testimonials</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('faqs')">FAQs</a></li>
+            </ul>
+        </nav>
+        <h1 class="sub-title">Key Features</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="feature 1.png" alt="Feature Image 1">
+                <div class="layer">
+                    <h3>24/7 Support</h3>
+                    <p>We offer round-the-clock support to ensure that help is always available when needed, giving families peace of mind.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="feature 2.png" alt="Feature Image 2">
+                <div class="layer">
+                    <h3>Custom Care Plans</h3>
+                    <p>We design personalized care plans based on the unique needs and preferences of each senior, ensuring tailored support.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="feature 3.png" alt="Feature Image 3">
+                <div class="layer">
+                    <h3>Community Activities</h3>
+                    <p>Engaging activities keep seniors active, socially connected, and happy, promoting mental and emotional well-being.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="feature 4.png" alt="Feature Image 4">
+                <div class="layer">
+                    <h3>Telehealth Services</h3>
+                    <p>Access healthcare professionals from the comfort of home through our telehealth services, ensuring convenient care.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- Additional Feature 1 -->
+            <div class="work">
+                <img src="feature5.png" alt="Feature Image 5">
+                <div class="layer">
+                    <h3>Wellness Monitoring</h3>
+                    <p>Regular monitoring of physical and mental wellness ensures that health issues are identified early and addressed promptly.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- Additional Feature 2 -->
+            <div class="work">
+                <img src="feature 6.png" alt="Feature Image 6">
+                <div class="layer">
+                    <h3>Nutrition Assistance</h3>
+                    <p>We provide meal planning and dietary guidance to ensure a balanced and healthy diet tailored to individual needs.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Centered Download Brochure Button -->
+        <div class="btn-container">
+            <a href="Medical Health Care Trifold Brochure in Blue White Corporate Geometric Style.pdf" class="btn" download>Download Brochure</a>
+        </div>
+        <!-- Centered See More Features Button -->
+        <div class="btn-container">
+            <a href="#" class="btn">See More Features</a>
+        </div>
+    </div>
+</div>
+<!-- Shop Section -->
+<div id="shop" class="section">
+    <div class="container">
+        <nav>
+            <img src="image1.png" class="logo" alt="Elderly Care Logo">
+            <ul>
+                <li><a href="#" onclick="showSection('header')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#" onclick="showSection('services')">Services</a></li>
+                <li><a href="#" onclick="showSection('features')">Features</a></li>
+                <li><a href="#" onclick="showSection('shop')">Shop</a></li>
+                <li><a href="#" onclick="showSection('blog')">Blog</a></li>
+                <li><a href="#" onclick="showSection('testimonials')">Testimonials</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('faqs')">FAQs</a></li>
+            </ul>
+        </nav>
+        <h1 class="sub-title">Shop Our Products</h1>
+        <div class="shop-list">
+            <div class="shop-item">
+                <img src="waker.jfif" alt="Product 1">
+                <h2>Comfort Walker</h2>
+                <p>A lightweight walker designed for stability and comfort, perfect for seniors on the move.</p>
+                <p class="price">$89.99</p>
+                <input type="number" class="quantity" min="1" value="1" data-price="89.99">
+            </div>
+            <div class="shop-item">
+                <br>
+                <img src="shop 2.jfif" alt="Product 2">
+                <h2>Medical Alert System</h2>
+                <p>Stay connected and safe with our easy-to-use medical alert system that allows seniors to call for help.</p>
+                <p class="price">$49.99</p>
+                <input type="number" class="quantity" min="1" value="1" data-price="49.99">
+            </div>
+            <div class="shop-item">
+                <br>
+                <img src="shop 3.jfif" alt="Product 3">
+                <h2>Senior Fitness Kit</h2>
+                <p>Includes lightweight weights and resistance bands to help seniors stay active and healthy at home.</p>
+                <p class="price">$39.99</p>
+                <input type="number" class="quantity" min="1" value="1" data-price="39.99">
+            </div>
+        </div>
+        <a href="#" class="btn" id="calculate-total">Calculate Total</a>
+    </div>
+</div>
+<!--Testimonials-->
+<div id="testimonials" class="section">
+    <div class="container">
+        <nav>
+            <img src="image1.png" class="logo" alt="Elderly Care Logo">
+            <ul>
+                <li><a href="#" onclick="showSection('header')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#" onclick="showSection('services')">Services</a></li>
+                <li><a href="#" onclick="showSection('features')">Features</a></li>
+                <li><a href="#" onclick="showSection('shop')">Shop</a></li>
+                <li><a href="#" onclick="showSection('blog')">Blog</a></li>
+                <li><a href="#" onclick="showSection('testimonials')">Testimonials</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('faqs')">FAQs</a></li>
+            </ul>
+        </nav>
+        <h1 class="sub-title">What Our Clients Say</h1>
+        <div class="testimonials-list">
+            <div class="testimonial-item">
+                <p>"The care provided by the team has made a significant difference in my mother's life. She feels valued and loved every day!"</p>
+                <h2>- Jane D.</h2>
+            </div>
+            <div class="testimonial-item">
+                <p>"I can't thank the staff enough for their support. They truly care about the well-being of their clients."</p>
+                <h2>- Robert L.</h2>
+            </div>
+            <div class="testimonial-item">
+                <p>"The personalized attention and kindness have made my experience fantastic. Highly recommended!"</p>
+                <h2>- Sarah T.</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Blog-->
+<div id="blog" class="section">
+    <div class="container">
+        <nav>
+            <img src="image1.png" class="logo" alt="Elderly Care Logo">
+            <ul>
+                <li><a href="#" onclick="showSection('header')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#" onclick="showSection('services')">Services</a></li>
+                <li><a href="#" onclick="showSection('features')">Features</a></li>
+                <li><a href="#" onclick="showSection('shop')">Shop</a></li>
+                <li><a href="#" onclick="showSection('blog')">Blog</a></li>
+                <li><a href="#" onclick="showSection('testimonials')">Testimonials</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('faqs')">FAQs</a></li>
+            </ul>
+        </nav>
+        <h1 class="sub-title">Latest Blog Posts</h1>
+        <div class="blog-list">
+            <div class="blog-item">
+                <img src="blog 1.jfif" alt="Blog Post 1">
+                <h2>Understanding Alzheimer's: A Guide for Caregivers</h2>
+                <p>Get insights into managing Alzheimer's and supporting your loved ones effectively.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="blog-item">
+                <img src="blog 2.jfif" alt="Blog Post 2">
+                <h2>Nutrition Tips for Seniors</h2>
+                <p>Learn about essential nutrition and meal planning for elderly health.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="blog-item">
+                <img src="blog 3.jfif" alt="Blog Post 3">
+                <h2>Staying Active in Your Golden Years</h2>
+                <p>Explore various activities that promote physical fitness and mental well-being.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Contact-->
+<div id="contact" class="section">
+    <div class="container">
+        <nav>
+            <img src="image1.png" class="logo" alt="Elderly Care Logo">
+            <ul>
+                <li><a href="#" onclick="showSection('header')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#" onclick="showSection('services')">Services</a></li>
+                <li><a href="#" onclick="showSection('features')">Features</a></li>
+                <li><a href="#" onclick="showSection('shop')">Shop</a></li>
+                <li><a href="#" onclick="showSection('blog')">Blog</a></li>
+                <li><a href="#" onclick="showSection('testimonials')">Testimonials</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('faqs')">FAQs</a></li>
+            </ul>
+        </nav>
+        <h1 class="sub-title">Contact Us</h1>
+        <form action="send_email.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</div>
+<!--FAQs-->
+<div id="faqs" class="section">
+    <div class="container">
+        <nav>
+            <img src="image1.png" class="logo" alt="Elderly Care Logo">
+            <ul>
+                <li><a href="#" onclick="showSection('header')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#" onclick="showSection('services')">Services</a></li>
+                <li><a href="#" onclick="showSection('features')">Features</a></li>
+                <li><a href="#" onclick="showSection('shop')">Shop</a></li>
+                <li><a href="#" onclick="showSection('blog')">Blog</a></li>
+                <li><a href="#" onclick="showSection('testimonials')">Testimonials</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('faqs')">FAQs</a></li>
+            </ul>
+        </nav>
+        <h1 class="sub-title">Frequently Asked Questions</h1>
+        <div class="faq-item">
+            <h2>What services do you provide?</h2>
+            <p>We offer personal care, medical assistance, in-home support, companionship, and rehabilitation support tailored to seniors' needs.</p>
+        </div>
+        <div class="faq-item">
+            <h2>How do I get started with your services?</h2>
+            <p>Contact us through our website or call us to schedule a consultation. We'll assess your needs and create a personalized plan.</p>
+        </div>
+        <div class="faq-item">
+            <h2>Are your caregivers certified?</h2>
+            <p>Yes, all our caregivers are trained, background-checked, and certified to provide the best care for our clients.</p>
+        </div>
+    </div>
+</div>
+<!--JavaScript-->
+<script>
+    // Function to show the appropriate section based on the tab clicked
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            section.style.display = 'none'; // Hide all sections
+        });
+        document.getElementById(sectionId).style.display = 'block'; // Show the selected section
+    }
+    // Show the header section by default
+    showSection('header');
+    // Function for the tabbed interface in About section
+    function opentab(evt, tabName) {
+        const tabContents = document.querySelectorAll('.tab-contents');
+        tabContents.forEach(content => {
+            content.style.display = 'none'; // Hide all tab contents
+        });
+        const tabLinks = document.querySelectorAll('.tab-links');
+        tabLinks.forEach(link => {
+            link.classList.remove('active-link'); // Remove active class from all links
+        });
+        document.getElementById(tabName).style.display = 'block'; // Show the clicked tab content
+        evt.currentTarget.classList.add('active-link'); // Add active class to the clicked link
+    }
+    document.getElementById('calculate-total').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        let totalAmount = 0; 
+        // Get all quantity inputs
+        const quantityInputs = document.querySelectorAll('.quantity');
+        // Calculate the total amount based on quantity and price of each product
+        quantityInputs.forEach(input => {
+            const quantity = input.value;
+            const price = input.getAttribute('data-price');
+            totalAmount += quantity * price;
+        });
+        // Display the total in an alert box
+        alert("Total Amount for all products: $" + totalAmount.toFixed(2));
+    });
+</script>
+</body>
+</html>
